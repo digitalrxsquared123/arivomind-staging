@@ -5395,3 +5395,63 @@ div.sjb-search-keywords > div.form-group > input#keywords {
 }
 
 
+
+
+
+/**********Website Revamp CSS************/
+
+/*****Home Page*****/
+
+.explore-btn {
+  /* Layout & Sizing */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px; /* Gives it the pill shape */
+  width: 15% !important;
+  display: flex;
+  justify-content: center;
+  
+  
+  /* Background & Border */
+  background-color: rgba(255, 255, 255, 0.08); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.25);  /* Subtle translucent border */
+  backdrop-filter: blur(4px);                    /* Creates the frosted glass effect */
+
+  /* Typography */
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+
+  /* Smooth transition for hover effects */
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+/****Align Explore SErvices button to left**********/
+#post-10920 > div > div.wp-block-uagb-container.uagb-block-c666f5a1.alignfull.uagb-is-root-container > div.uagb-container-inner-blocks-wrap > div.wp-block-uagb-container.uagb-block-857877fa {
+    align-items: flex-start;
+}
+
+/* Hover state */
+.explore-btn:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Subtle arrow animation on hover */
+.explore-btn:hover .arrow {
+  transform: translateX(3px);
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+#post-10920 > div > div.wp-block-uagb-container.uagb-block-b3b3a31e.alignfull.uagb-is-root-container {
+    padding-bottom: 0px !important;
+}
+
