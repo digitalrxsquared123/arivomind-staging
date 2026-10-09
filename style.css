@@ -5424,3 +5424,37 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
     align-items: flex-end;
 }
 
+
+/* Logo ticker for .arivomind-icons-slider */
+.arivomind-icons-slider .arivo-marquee {
+  overflow: hidden;
+}
+
+.arivomind-icons-slider .arivo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: arivo-logo-scroll 60s linear infinite;
+}
+
+.arivomind-icons-slider .arivo-marquee-track > * {
+  flex: 0 0 auto;
+  width: 192px !important;   /* width of each logo slot */
+  padding: 0 20px;           /* space between logos */
+  box-sizing: border-box;
+}
+
+/* Pause when someone hovers over the logos */
+.arivomind-icons-slider .arivo-marquee:hover .arivo-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes arivo-logo-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Respect visitors who turn off motion in their device settings */
+@media (prefers-reduced-motion: reduce) {
+  .arivomind-icons-slider .arivo-marquee-track { animation: none; }
+}
+
