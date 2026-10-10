@@ -1,0 +1,147 @@
+
+
+/* ---------- **************Case study cards***************************** ---------- */
+.arivo-cs-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+/* Extra darkening layer for hover */
+.arivo-cs-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 27, 62, 0);
+  transition: background 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.arivo-cs-card:hover::after {
+  background: rgba(13, 27, 62, 0.55);
+}
+
+/* Keep logo and text above the hover layer */
+.arivo-cs-card .arivo-cs-logo,
+.arivo-cs-card .arivo-cs-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* White logo badge */
+.arivo-cs-card .arivo-cs-logo {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: fit-content;
+  margin: 0;
+}
+.arivo-cs-card .arivo-cs-logo img {
+  max-height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Text fades slightly on hover */
+.arivo-cs-card .arivo-cs-text {
+  transition: opacity 0.3s ease;
+}
+.arivo-cs-card:hover .arivo-cs-text {
+  opacity: 0.5;
+}
+
+/* "View case study" button: hidden until hover */
+.arivo-cs-card .arivo-cs-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 3;
+  margin: 0;
+  background: #8fb2ff;
+  color: #0d1b3e;
+  padding: 14px 26px;
+  border-radius: 4px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.arivo-cs-card:hover .arivo-cs-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* ---------- Slider dots as bars ---------- */
+.arivo-cs-slider .swiper-pagination-bullet {
+  width: 48px;
+  height: 4px;
+  border-radius: 0;
+  background: #c4c4c4;
+  opacity: 1;
+}
+.arivo-cs-slider .swiper-pagination-bullet-active {
+  background: #467ff7;
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 767px) {
+  .arivo-cs-card {
+    min-height: 340px !important;
+  }
+  /* No hover on touch screens: show the text normally */
+  .arivo-cs-card .arivo-cs-btn {
+    display: none;
+  }
+}
+
+
+
+/* Row inside each slide: normal width, 3 equal columns */
+.arivo-cs-slider .swiper-content > .wp-block-uagb-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.arivo-cs-slider .swiper-content > .wp-block-uagb-container > .uagb-container-inner-blocks-wrap {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 24px;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Cards: equal width, logo top, text bottom */
+.arivo-cs-slider .arivo-cs-card {
+  flex: 1 1 0 !important;
+  min-width: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+}
+
+/* Logo badge: shrink to fit the logo */
+.arivo-cs-card .arivo-cs-logo {
+  width: auto !important;
+  align-self: flex-start !important;
+}
+.arivo-cs-card .arivo-cs-logo figure {
+  margin: 0 !important;
+}
+
+/* Hide the slider arrows */
+.arivo-cs-slider .swiper-button-prev,
+.arivo-cs-slider .swiper-button-next {
+  display: none !important;
+}
+
+/* Phones: stack the cards */
+@media (max-width: 767px) {
+  .arivo-cs-slider .swiper-content > .wp-block-uagb-container > .uagb-container-inner-blocks-wrap {
+    flex-direction: column !important;
+  }
+}

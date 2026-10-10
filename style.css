@@ -5436,11 +5436,40 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
   animation: arivo-logo-scroll 60s linear infinite;
 }
 
+/* Line logos up on a shared centre line */
+.arivomind-icons-slider .arivo-marquee-track {
+  align-items: center;
+}
+
+/* Each logo slot: same width, same height, logo centred */
 .arivomind-icons-slider .arivo-marquee-track > * {
   flex: 0 0 auto;
-  width: 192px !important;   /* width of each logo slot */
-  padding: 0 20px;           /* space between logos */
+  width: 192px !important;
+  height: 80px;
+  padding: 0 20px !important;   /* !important beats Spectra's 0 4px */
   box-sizing: border-box;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make Spectra's inner wrappers fill the slot and centre too */
+.arivomind-icons-slider .arivo-marquee-track .spectra-image-gallery__media,
+.arivomind-icons-slider .arivo-marquee-track picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Scale every logo to fit, without stretching */
+.arivomind-icons-slider .arivo-marquee-track img {
+  max-height: 50px;
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
 }
 
 /* Pause when someone hovers over the logos */
@@ -5456,5 +5485,96 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
 /* Respect visitors who turn off motion in their device settings */
 @media (prefers-reduced-motion: reduce) {
   .arivomind-icons-slider .arivo-marquee-track { animation: none; }
+}
+
+
+article.post-11186.page.type-page  div.wp-block-group.arivomind-standards.is-layout-grid.wp-block-group-is-layout-grid > figure {
+	border-right: 1px solid #d0d3d9;
+}
+
+/********Arivomind standards logos*****/
+
+/* Standards logo row */
+article.post-11186.page.type-page .arivomind-standards {
+  gap: 0 !important;
+  align-items: stretch;
+}
+
+/* Each logo box: equal height, logo centred, divider on the right */
+article.post-11186.page.type-page .arivomind-standards .arivomind-standard {
+  margin: 0 !important;
+  height: 112px;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #d3dcea;   /* divider colour */
+}
+
+/* No divider after the last logo */
+article.post-11186.page.type-page .arivomind-standards .arivomind-standard:last-child {
+  border-right: none;
+}
+
+/* Logos: same max height, never stretched, no borders on the image */
+article.post-11186.page.type-page .arivomind-standards .arivomind-standard img {
+  max-height: 50px;
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  border: 0 !important;
+}
+
+/* Phones: when the boxes wrap, use dividers underneath instead */
+@media (max-width: 767px) {
+  article.post-11186.page.type-page .arivomind-standards .arivomind-standard {
+    border-right: none;
+    border-bottom: 1px solid #d3dcea;
+  }
+  article.post-11186.page.type-page .arivomind-standards .arivomind-standard:last-child {
+    border-bottom: none;
+  }
+}
+
+
+/**********************Cards CSS*******************/
+
+.wp-block-uagb-container.arivo-cs-card {
+    position: relative;
+}
+
+div.wp-block-uagb-container.arivo-cs-card > div.wp-block-uagb-image.arivo-cs-logo {
+    position: absolute !important;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+div.wp-block-uagb-container.arivo-cs-card > p.arivo-cs-text.wp-block-paragraph {
+    position: absolute !important;
+    top: 70%;
+    left: 10%;
+	width: 80% !important;
+}
+
+div.wp-block-uagb-container.arivo-cs-card > div.wp-block-buttons > div.wp-block-button.arivo-cs-btn {
+	opacity: 0;
+	position: absolute !important;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.wp-block-uagb-container.arivo-cs-card > div.wp-block-buttons > div.wp-block-button.arivo-cs-btn:hover {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+div.wp-block-uagb-container.arivo-cs-card > div.wp-block-uagb-image.arivo-cs-logo > figure > img {
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
 }
 
