@@ -5687,7 +5687,7 @@ div > div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-
 /*************Added border below platform left items********/
 
 div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div > div.wp-block-uagb-container > div.wp-block-uagb-info-box:nth-child(-n+2) {
-    border-bottom: 1px solid var(--ast-global-color-9);
+    border-bottom: 1px solid #fff;
 }
 
 div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div > div.wp-block-uagb-container > div.wp-block-uagb-info-box {
