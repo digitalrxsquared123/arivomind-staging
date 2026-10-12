@@ -5490,7 +5490,6 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
 /* Second ticker scrolls left-to-right */
 .arivomind-icons-slider.arivo-reverse .arivo-marquee-track {
   animation-direction: reverse;
-  margin-top: 24px;
   animation-duration: calc(var(--arivo-duration) * 1.3);
 }
 
