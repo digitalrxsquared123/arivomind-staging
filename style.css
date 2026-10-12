@@ -5600,9 +5600,9 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 
 }
 
-/***********Space below sections home page*********/
+/***********++++++++++++++++++++++++++++++++SPACE BELOW SECTIONS USES NTH CHILD CSS DONNOT REORDER ELEMENTS!!++++++++++++++++++++++*********/
 
-article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container {
+article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
     margin-bottom: 2em !important;
 }
 
@@ -5701,3 +5701,52 @@ div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-
 	}
 
 }
+
+
+/*************Equal height Platform Columns*************/
+
+@media screen and (min-width: 767px) {
+
+	div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div.uagb-container-inner-blocks-wrap {
+    align-items: stretch !important;
+}
+
+div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div.uagb-container-inner-blocks-wrap > div.wp-block-uagb-container {
+    flex: 1 1 auto !important;
+}
+
+}
+
+/***********Increase top section bottom padding**************/
+
+div.entry-content.clear > div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container {
+    padding-bottom: 20px !important;
+}
+
+div.entry-content.clear > div.wp-block-uagb-container.arivomind-ease-scale.alignfull.uagb-is-root-container {
+    padding-bottom: 20px !important;
+}
+
+/******************************RESPONSIVE STYLING**************************************/
+
+@media screen and (max-width: 767px) {
+
+	div.entry-content.clear > div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container {
+    padding-bottom: 0px !important;
+}
+
+}
+
+@media screen and (max-width: 976px) {
+
+	div.entry-content.clear > div.wp-block-uagb-container.alignfull.uagb-is-root-container > div > div.wp-block-uagb-image-gallery.arivomind-img-gallery1 > div > div.spectra-image-gallery__media-wrapper--isotope {
+    transform: scale(0.6);
+}
+
+	main#main > article.page.type-page > div.entry-content.clear > div.wp-block-uagb-container.arivomind-trusted-by-leaders.uagb-block-4b60d430.alignfull.uagb-is-root-container {
+    margin-bottom: 0px !important;
+}
+
+}
+
+
