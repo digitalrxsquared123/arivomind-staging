@@ -5525,7 +5525,7 @@ article.post-11186.page.type-page .arivomind-standards .arivomind-standard:last-
   border-right: none;
 }
 
-/* Logos: same max height, never stretched, no borders on the image */
+/* Logos: same max height, never stretched, no borders on the image 
 article.post-11186.page.type-page .arivomind-standards .arivomind-standard img {
   max-height: 50px;
   max-width: 100%;
@@ -5533,7 +5533,7 @@ article.post-11186.page.type-page .arivomind-standards .arivomind-standard img {
   height: auto !important;
   object-fit: contain;
   border: 0 !important;
-}
+}*/
 
 /* Phones: when the boxes wrap, use dividers underneath instead */
 @media (max-width: 767px) {
@@ -5621,7 +5621,7 @@ article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-
 }
 
 
-@media screen and (max-width: 976px) {
+@media screen and (max-width: 768px) {
 	/* Container adjustments */
 .arivomind-img-gallery1 > .spectra-image-gallery {
     height: auto !important; /* Overrides inline fixed container height */
@@ -5763,5 +5763,38 @@ main#main > article.type-page.page > div.entry-content.clear > div.wp-block-uagb
 
 }
 
+@media screen and (max-width: 976px) {
 
+	article.page.type-page > div.entry-content.clear > div.wp-block-uagb-container.alignfull.uagb-is-root-container > div > div.wp-block-group.arivomind-capabilities-grid.is-layout-grid > div.wp-block-uagb-container {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+}
+
+
+@media screen and (max-width: 765px) {
+
+	div.wp-block-uagb-slider-child.uagb-slider-child-wrap.swiper-slide.swiper-slide-active > div > div > div > div.wp-block-uagb-container.arivo-cs-card > div.wp-block-uagb-image.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-none.arivo-cs-logo > figure {
+    position: absolute;
+    left: clamp(20vw, 11em, 25vw);
+}
+
+}
+
+@media screen and (min-width: 766px) and (max-width: 976px) {
+
+
+	div.wp-block-uagb-slider-child.uagb-slider-child-wrap.swiper-slide.swiper-slide-active > div > div > div > div.wp-block-uagb-container.arivo-cs-card > div.wp-block-uagb-image.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-none.arivo-cs-logo > figure {
+    position: absolute;
+    left: clamp(8vw, 5em, 11vw);
+}
+
+}
+
+
+
+div.entry-content.clear > div.wp-block-uagb-container.arivomind-by-the-numbers.alignfull.uagb-is-root-container > div > div > div.wp-block-uagb-container > div > h2 {
+    font-size: clamp(1.6em, 32px, 6vw);
+}
 
