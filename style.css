@@ -5693,3 +5693,11 @@ div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-
 div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div > div.wp-block-uagb-container > div.wp-block-uagb-info-box {
     padding-bottom: 15px;
 }
+
+@media screen and (min-width: 767px) {
+
+	div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div > div.wp-block-uagb-container > div.wp-block-uagb-info-box {
+		margin-right: 5em;
+	}
+
+}
