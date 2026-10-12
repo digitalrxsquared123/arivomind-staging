@@ -5578,3 +5578,101 @@ div.wp-block-uagb-container.arivo-cs-card > div.wp-block-uagb-image.arivo-cs-log
     border-radius: 10px;
 }
 
+/*********Match column heights for Resources containers***************/
+
+@media screen and (min-width: 767px) {
+
+div.arivomind-resources-container > div.uagb-container-inner-blocks-wrap {
+    align-items: stretch !important;
+}
+
+div.arivomind-resources-column > div.wp-block-uagb-container {
+    flex: 1 1 auto !important;
+}
+
+}
+
+/***********Space below sections home page*********/
+
+article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container {
+    margin-bottom: 2em !important;
+}
+
+
+/*************RESPONSIVE STYLING********************/
+
+@media screen and (max-width: 1250px) {
+
+	article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container {
+
+    padding-left: 24px !important;
+	padding-right: 24px !important;
+
+}
+
+}
+
+
+@media screen and (max-width: 976px) {
+	/* Container adjustments */
+.arivomind-img-gallery1 > .spectra-image-gallery {
+    height: auto !important; /* Overrides inline fixed container height */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px; /* Set desired gap between items */
+}
+
+/* Force child elements into standard document flow */
+.arivomind-img-gallery1 .spectra-image-gallery__media-wrapper--isotope {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important; /* Ensures full-width single column */
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	div.wp-block-group.arivomind-standards.is-layout-grid {
+    grid-template-columns: 1fr !important;
+}
+
+}
+
+@media screen and (max-width: 976px){
+
+	div.wp-block-group.arivomind-capabilities-grid.is-layout-grid {
+    grid-template-columns: 1fr;
+}
+
+div.wp-block-group.arivomind-capabilities-grid.is-layout-grid > div.wp-block-uagb-container[class^="uagb-block-"] {
+	padding-bottom: 15px !important;
+}
+
+}
+
+@media screen and (min-width: 767px) {
+
+	div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container > div > div.uagb-ifb-content {
+    padding-right: 3em;
+}
+
+}
+
+/**********Adding icons to home page banner****************/
+
+@media screen and (min-width: 767px) {
+
+	div > div.wp-block-uagb-container.arivomind-home-page-top-banner.uagb-is-root-container > div > div.wp-block-uagb-container > div.wp-block-uagb-container {
+    max-width: 70%;
+}
+
+div > div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container {
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+}
+
+}
+
+
