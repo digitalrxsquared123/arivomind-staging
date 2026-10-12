@@ -5433,7 +5433,7 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
 .arivomind-icons-slider .arivo-marquee-track {
   display: flex;
   width: max-content;
-  animation: arivo-logo-scroll 60s linear infinite;
+  animation: arivo-logo-scroll var(--arivo-duration, 60s) linear infinite;
 }
 
 /* Line logos up on a shared centre line */
@@ -5479,7 +5479,7 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
 
 @keyframes arivo-logo-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  to   { transform: translateX(calc(-1 * var(--arivo-set-width, 50%))); }
 }
 
 /* Respect visitors who turn off motion in their device settings */
