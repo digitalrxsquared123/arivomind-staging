@@ -1,16 +1,22 @@
 (function () {
   var SPEED = 40; // pixels per second (higher = faster)
   var tries = 0;
+
   var timer = setInterval(function () {
     tries++;
-    if (tries > 50) { clearInterval(timer); return; }
-    if (typeof jQuery === 'undefined') return;
+    if (typeof jQuery === 'undefined') { if (tries > 50) clearInterval(timer); return; }
 
-    var $gallery = jQuery('.arivomind-icons-slider .uagb-slick-carousel.slick-initialized');
-    if (!$gallery.length) return;
+    // Build any gallery that Spectra has finished setting up
+    jQuery('.arivomind-icons-slider .uagb-slick-carousel.slick-initialized')
+      .not('.arivo-marquee')
+      .each(function () { buildTicker(jQuery(this)); });
 
-    clearInterval(timer);
+    // Stop checking once every gallery is done (or after 10 seconds)
+    var remaining = jQuery('.arivomind-icons-slider .uagb-slick-carousel').not('.arivo-marquee').length;
+    if (remaining === 0 || tries > 50) clearInterval(timer);
+  }, 200);
 
+  function buildTicker($gallery) {
     // Turn off Slick for this gallery only
     $gallery.slick('unslick');
 
@@ -33,5 +39,5 @@
     // Slide exactly one set, at a steady speed
     $track[0].style.setProperty('--arivo-set-width', setWidth + 'px');
     $track[0].style.setProperty('--arivo-duration', (setWidth / SPEED) + 's');
-  }, 200);
+  }
 })();
