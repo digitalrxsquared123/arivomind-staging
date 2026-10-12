@@ -5694,7 +5694,7 @@ div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-
     padding-bottom: 15px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1500px) {
 
 	div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container > div > div > div > div.wp-block-uagb-container > div.wp-block-uagb-info-box {
 		margin-right: 5em;
@@ -5748,5 +5748,20 @@ div.entry-content.clear > div.wp-block-uagb-container.arivomind-ease-scale.align
 }
 
 }
+
+
+@media screen and (max-width: 768px) {
+
+	div.entry-content.clear > div.wp-block-uagb-container.alignfull.uagb-is-root-container > div > div > div > div.arivomind-standards > figure.arivomind-standard {
+    background: #fff;
+	border: none;
+}
+
+main#main > article.type-page.page > div.entry-content.clear > div.wp-block-uagb-container.arivomind-security-standards.alignfull.uagb-is-root-container {
+    margin-bottom: 0px !important;
+}
+
+}
+
 
 
