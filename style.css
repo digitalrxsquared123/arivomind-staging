@@ -5637,7 +5637,7 @@ article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-
     position: static !important;
     left: auto !important;
     top: auto !important;
-    width: 100% !important; /* Ensures full-width single column */
+    width: 50% !important; /* Ensures full-width single column */
 }
 
 }
