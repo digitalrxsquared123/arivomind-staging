@@ -5602,10 +5602,13 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 
 /***********++++++++++++++++++++++++++++++++SPACE BELOW SECTIONS USES NTH CHILD CSS DONNOT REORDER ELEMENTS!!++++++++++++++++++++++*********/
 
-article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
+@media screen and (min-width: 976px) {
+
+	article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
     margin-bottom: 2em !important;
 }
 
+}
 
 /*************RESPONSIVE STYLING********************/
 
@@ -5799,4 +5802,55 @@ main#main > article.type-page.page > div.entry-content.clear > div.wp-block-uagb
 div.entry-content.clear > div.wp-block-uagb-container.arivomind-by-the-numbers.alignfull.uagb-is-root-container > div > div > div.wp-block-uagb-container > div > h2 {
     font-size: clamp(1.6em, 32px, 6vw);
 }
+
+
+@media screen and (max-width: 768px) {
+
+	/* Allow figures in grid to expand fully */
+.arivomind-standards figure.arivomind-standard {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* Force inner images to scale up to fill their container */
+.arivomind-standards figure.arivomind-standard img {
+    width: 55% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+}
+
+/********Home Slide Slider Styling***********/
+
+div.wp-block-uagb-container.arivomind-side-slider-container {
+    box-shadow: none;
+    background-color: var(--ast-global-color-0);
+    border: 2px solid #006fcd33;
+    border-radius: 20px;
+}
+
+div.arivomind-side-slide span, div.arivomind-side-slide h3, div.arivomind-side-slide p {
+    color: #fff !important;
+}
+
+div.arivomind-side-slide span.uagb-inline-editing {
+    color: #fff !important;
+}
+
+div.arivomind-side-slide span.uagb-inline-editing:hover, div.arivomind-side-slide svg:hover {
+    fill: #6ec950 !important;
+	color: #6ec950 !important;
+}
+
+div.arivomind-side-slider > div.swiper-pagination> span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    color: #fff !important;
+    background: #fff !important;
+}
+
+
 
