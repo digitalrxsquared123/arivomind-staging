@@ -5604,7 +5604,11 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 
 @media screen and (min-width: 976px) {
 
-	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(13), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
+    margin-bottom: 2em !important;
+}
+
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:last-child {
     margin-bottom: 2em !important;
 }
 
@@ -5938,9 +5942,20 @@ div.arivomind-gutenslider div.swiper div.swiper-wrapper div.swiper-slide.arivomi
 
 @media screen and (max-width: 402px) {
 
-	div.arivomind-side-slider-container > div.arivomind-side-slider div.swiper-wrapper > div.wp-block-uagb-slider-child.uagb-slider-child-wrap.swiper-slide.uagb-block-0ab3b0d6.arivomind-side-slide.swiper-slide-active > div > div > div > div > div.uagb-ifb-button-wrapper.wp-block-button {
+	/*div.arivomind-side-slider-container > div.arivomind-side-slider div.swiper-wrapper > div.wp-block-uagb-slider-child.uagb-slider-child-wrap.swiper-slide.uagb-block-0ab3b0d6.arivomind-side-slide.swiper-slide-active > div > div > div > div > div.uagb-ifb-button-wrapper.wp-block-button {
     position: absolute;
     bottom: 6px;
+}*/
+
+div.arivomind-side-slide h3 {
+
+    font-size: 20px;
+    margin-bottom: 0px !important;
+
+}
+
+div.arivomind-side-slide span.uagb-ifb-title-prefix {
+	display: none;
 }
 
 }
