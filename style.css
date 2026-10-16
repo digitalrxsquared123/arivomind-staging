@@ -5608,8 +5608,8 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
     margin-bottom: 2em !important;
 }
 
-	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:last-child {
-    margin-bottom: 2em !important;
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(17) {
+		margin-bottom: 2em;
 }
 
 }
