@@ -5397,7 +5397,7 @@ div.sjb-search-keywords > div.form-group > input#keywords {
 
 /************Built to meet the standards grid of images***********/
 
-article.post-11186.page.type-page div.wp-block-group.arivomind-standards.is-layout-grid.wp-block-group-is-layout-grid {
+article.post-11466.page.type-page div.wp-block-group.arivomind-standards.is-layout-grid.wp-block-group-is-layout-grid {
     background-color: #e8f1ff;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -5405,7 +5405,7 @@ article.post-11186.page.type-page div.wp-block-group.arivomind-standards.is-layo
     display: grid;
 }
 
-article.post-11186.page.type-page figure.wp-block-image.size-full.arivomind-standard {
+article.post-11466.page.type-page figure.wp-block-image.size-full.arivomind-standard {
     grid-column-gap: 8px;
     grid-row-gap: 8px;
     text-align: center;
@@ -5420,7 +5420,7 @@ article.post-11186.page.type-page figure.wp-block-image.size-full.arivomind-stan
 
 /***********Fixing the caption at bottom of cover image top home section*********/
 
-article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section-2-cover {
+article.post-11466.page.type-page div.wp-block-cover.alignfull.arivomind-section-2-cover {
     align-items: flex-end;
 }
 
@@ -5496,20 +5496,20 @@ article.post-11186.page.type-page div.wp-block-cover.alignfull.arivomind-section
 
 
 
-article.post-11186.page.type-page  div.wp-block-group.arivomind-standards.is-layout-grid.wp-block-group-is-layout-grid > figure {
+article.post-11466.page.type-page  div.wp-block-group.arivomind-standards.is-layout-grid.wp-block-group-is-layout-grid > figure {
 	border-right: 1px solid #d0d3d9;
 }
 
 /********Arivomind standards logos*****/
 
 /* Standards logo row */
-article.post-11186.page.type-page .arivomind-standards {
+article.post-11466.page.type-page .arivomind-standards {
   gap: 0 !important;
   align-items: stretch;
 }
 
 /* Each logo box: equal height, logo centred, divider on the right */
-article.post-11186.page.type-page .arivomind-standards .arivomind-standard {
+article.post-11466.page.type-page .arivomind-standards .arivomind-standard {
   margin: 0 !important;
   height: 112px;
   padding: 16px 20px;
@@ -5521,12 +5521,12 @@ article.post-11186.page.type-page .arivomind-standards .arivomind-standard {
 }
 
 /* No divider after the last logo */
-article.post-11186.page.type-page .arivomind-standards .arivomind-standard:last-child {
+article.post-11466.page.type-page .arivomind-standards .arivomind-standard:last-child {
   border-right: none;
 }
 
 /* Logos: same max height, never stretched, no borders on the image 
-article.post-11186.page.type-page .arivomind-standards .arivomind-standard img {
+article.post-11466.page.type-page .arivomind-standards .arivomind-standard img {
   max-height: 50px;
   max-width: 100%;
   width: auto !important;
@@ -5537,11 +5537,11 @@ article.post-11186.page.type-page .arivomind-standards .arivomind-standard img {
 
 /* Phones: when the boxes wrap, use dividers underneath instead */
 @media (max-width: 767px) {
-  article.post-11186.page.type-page .arivomind-standards .arivomind-standard {
+  article.post-11466.page.type-page .arivomind-standards .arivomind-standard {
     border-right: none;
     border-bottom: 1px solid #d3dcea;
   }
-  article.post-11186.page.type-page .arivomind-standards .arivomind-standard:last-child {
+  article.post-11466.page.type-page .arivomind-standards .arivomind-standard:last-child {
     border-bottom: none;
   }
 }
@@ -5604,7 +5604,7 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 
 @media screen and (min-width: 976px) {
 
-	article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(-n+2), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+4):nth-child(-n+6), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+12):nth-child(-n+13), article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(n+15):nth-child(-n+16) {
     margin-bottom: 2em !important;
 }
 
