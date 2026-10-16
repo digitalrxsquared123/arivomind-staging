@@ -5614,7 +5614,7 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 
 @media screen and (max-width: 1250px) {
 
-	article#post-11186 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container {
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container {
 
     padding-left: 24px !important;
 	padding-right: 24px !important;
@@ -5829,17 +5829,33 @@ div.entry-content.clear > div.wp-block-uagb-container.arivomind-by-the-numbers.a
 
 div.wp-block-uagb-container.arivomind-side-slider-container {
     box-shadow: none;
+	background: linear-gradient(135deg, #6f6be0 0%, #5b57c9 45%, #3f3b9e 100%) !important;
+    border: 2px solid #006fcd33;
+    border-radius: 20px;
+	    box-shadow: none;
     background-color: var(--ast-global-color-0);
     border: 2px solid #006fcd33;
     border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(30, 27, 90, 0.08),
+    0 12px 24px rgba(30, 27, 90, 0.16),
+    0 32px 64px rgba(30, 27, 90, 0.22) !important;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-div.arivomind-side-slide span, div.arivomind-side-slide h3, div.arivomind-side-slide p {
+div.arivomind-side-slide span, div.arivomind-side-slide p {
     color: #fff !important;
 }
 
-div.arivomind-side-slide span.uagb-inline-editing {
-    color: #fff !important;
+div.arivomind-side-slide h3 {
+    color: #ffa52d !important;
+	font-weight: 900 !important;
+}
+
+
+div.arivomind-side-slide span.uagb-inline-editing, div.arivomind-side-slide svg {
+    color: #ffa52d !important;
+	fill: #ffa52d !important;
+	font-weight: 900 !important;
 }
 
 div.arivomind-side-slide span.uagb-inline-editing:hover, div.arivomind-side-slide svg:hover {
@@ -5851,6 +5867,80 @@ div.arivomind-side-slider > div.swiper-pagination> span.swiper-pagination-bullet
     color: #fff !important;
     background: #fff !important;
 }
+
+
+.arivomind-side-slider .swiper-pagination-bullet-active {
+    width: 26px !important;
+    border-radius: 4px !important;
+    background: #ffffff !important;
+}
+
+.arivomind-side-slider .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.45);
+    opacity: 1;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+
+div.wp-block-uagb-slider.arivomind-side-slider.uagb-slider-container {
+    padding: 0px;
+}
+
+
+/***********Tricky pagination bullets spacing!!************/
+
+#post-11466 > div > div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container.arivomind-side-slider-container > div > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    bottom: 5px;
+}
+
+.arivomind-side-slider .swiper-wrapper {
+    height: 280px;
+}
+
+
+/*********Gutenberg Slider Height************/
+
+/*#gutenslider-2ek2w6ev1 > div > div.swiper.swiper-initialized.swiper-horizontal.swiper-watch-progress.swiper-backface-hidden > div.swiper-wrapper {
+    height: 200px;
+}*/
+
+div.arivomind-gutenslider > div > div.swiper > div.swiper-wrapper {
+    height: 200px !important;
+}
+
+@media screen and (max-width: 600px) {
+
+/*div.wp-block-eedee-block-gutenslider div.swiper div.swiper-wrapper div.swiper-slide.wp-block-eedee-block-gutenslide > div.slide-content > div > h4 {
+    margin-top: 0px !important;
+}*/
+
+div.arivomind-gutenslider div.swiper div.swiper-wrapper div.swiper-slide.arivomind-gutenslider-slide > div.slide-content > div > h4.uagb-heading-text {
+    margin-top: 0px !important;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	div.arivomind-gutenslider div.swiper div.swiper-wrapper div.swiper-slide.arivomind-gutenslider-slide > div.slide-content > div > h4.uagb-heading-text {
+	font-size: clamp(5vw, 3em, 6vw) !important;
+}
+
+div.arivomind-gutenslider div.swiper div.swiper-wrapper div.swiper-slide.arivomind-gutenslider-slide > div.slide-content > p {
+    font-size: clamp(2vw, 2em, 3vw) !important;
+}
+
+}
+
+
+
+
+
+
+
 
 
 
