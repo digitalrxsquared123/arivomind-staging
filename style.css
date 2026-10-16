@@ -5962,7 +5962,13 @@ div.arivomind-side-slide span.uagb-ifb-title-prefix {
 
 
 
+/***Slider height mobile***/
 
+@media screen and (max-width: 770px) {
+	div.arivomind-gutenslider > div.eedee-swiper-outer > div.swiper.swiper-initialized.swiper-horizontal.swiper-watch-progress.swiper-backface-hidden > div.swiper-wrapper {
+    min-height: 10vh !important;
+}
+}
 
 
 
