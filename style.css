@@ -79,7 +79,7 @@ Template: astra
 }*/
 	
 	div#gutenslider-2ek2w6ev1 div.slide-content h4 {
-		font-size:28px !important;
+		font-size: clamp(6.4vw, 1.5em, 7vw) !important;
 	}
 	
 	div#gutenslider-2ek2w6ev1 div.slide-content p {
