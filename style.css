@@ -1396,7 +1396,7 @@ article#post-5961 > div.entry-content.clear > div.wp-block-uagb-container.uagb-b
 /*Adding hover and focus coolors to regular sub menus*/
 
 li[id^="menu-item-"] > a > span.menu-text:hover, li[id^="menu-item-"] > a > span.menu-text:focus {
-	color: #6ec950 !important;
+	color: #ffa52d !important;
 
 }
 

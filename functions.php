@@ -62,11 +62,11 @@ function custom_gutenslider_speed_script() {
                     
                     // Update autoplay delay if autoplay is enabled
                     if (swiperInstance.params.autoplay && typeof swiperInstance.params.autoplay === 'object') {
-                        swiperInstance.params.autoplay.delay = 10000; // 10 seconds per slide
+                        swiperInstance.params.autoplay.delay = 5000; // 5 seconds per slide
                     }
                     
                     // Update transition speed
-                    swiperInstance.params.speed = 2000; // 2 seconds transition
+                    swiperInstance.params.speed = 1000; // 1 seconds transition
                     
                     // Apply changes
                     swiperInstance.update();
