@@ -6213,3 +6213,16 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
     padding-bottom: 1em !important;
 }
 
+/***********Reduce slider height************/
+
+@media screen and (min-width: 1450px) {
+
+	div.arivomind-gutenslider > div > div.swiper.swiper-initialized.swiper-horizontal.swiper-watch-progress.swiper-backface-hidden {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
+
