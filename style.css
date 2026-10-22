@@ -1389,7 +1389,7 @@ article#post-5961 > div.entry-content.clear > div.wp-block-uagb-container.uagb-b
 /*Adding hover effect to mega menu*/
 
 .mm-section:hover {	
-	background-color: #6ec95030 !important;
+	background-color: #ffa52d30 !important;
 	border-radius: 5px !important;
 }
 
@@ -5612,6 +5612,10 @@ div.arivomind-resources-column > div.wp-block-uagb-container {
 		margin-bottom: 2em;
 }
 
+	article#post-11466 > div.entry-content.clear > div.wp-block-uagb-container.uagb-is-root-container:nth-child(18) {
+		margin-bottom: 2em;
+}
+
 }
 
 /*************RESPONSIVE STYLING********************/
@@ -5833,7 +5837,7 @@ div.entry-content.clear > div.wp-block-uagb-container.arivomind-by-the-numbers.a
 
 div.wp-block-uagb-container.arivomind-side-slider-container {
     box-shadow: none;
-	background: linear-gradient(135deg, #6f6be0 0%, #5b57c9 45%, #3f3b9e 100%) !important;
+	background: linear-gradient(135deg, var(--ast-global-color-0) 0%, var(--ast-global-color-0) 50%, #1c2237 100%) !important;
     border: 2px solid #006fcd33;
     border-radius: 20px;
 	    box-shadow: none;
@@ -6054,5 +6058,158 @@ div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-roo
 /***************Reduce menu link sizes**************/
 
 div.main-navigation > ul.main-header-menu > li.menu-item > a > span.menu-text {
-    font-size: 1.1rem !important;
+    font-size: 0.9rem !important;
 }
+
+/*****Change Swiper slide background***********/
+
+/* div.swiper-wrapper > div.swiper-slide.wp-block-eedee-block-gutenslide.arivomind-gutenslider-slide > div.slide-content {
+    background: linear-gradient(90deg, #ffffff 0%, #f1f0fb 35%, #8a87dd 75%, #5b57c9 100%);
+} */
+
+div.wp-block-eedee-block-gutenslider > div > div.swiper {
+    background: linear-gradient(90deg, #ffffff 0%, #f1f0fb 35%, #8a87dd 75%, #5b57c9 100%);
+}
+
+div.swiper-wrapper > div.swiper-slide.wp-block-eedee-block-gutenslide.arivomind-gutenslider-slide > div.slide-content {
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1450px) {
+
+	div.swiper-wrapper > div.swiper-slide.wp-block-eedee-block-gutenslide.arivomind-gutenslider-slide > div.slide-content {
+    padding-left: 160.4px !important;
+}
+
+}
+
+/*************Move up pagination dots - this is positions absolute! and add pace below banner*********************/
+
+@media screen and (max-width: 802px) {
+
+	div.arivomind-gutenslider > div > div.eedee-gutenslider-pagination {
+    top: 85%;
+}
+
+	div.arivomind-home-page-top-banner {
+		margin-top: 2em;
+	}
+
+}
+
+
+/*************************************STYLING HOME PAGE POSTS QUERY BLOCK***************************************************/
+
+/* Homepage blog list */
+.arivo-blog-grid .wp-block-post-template {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each post as a card */
+.arivo-blog-grid .wp-block-post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(30, 27, 90, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.arivo-blog-grid .wp-block-post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(30, 27, 90, 0.14);
+}
+
+/* Remove default gaps around the columns and image */
+.arivo-blog-grid .wp-block-columns,
+.arivo-blog-grid .wp-block-post-featured-image {
+  margin: 0;
+}
+
+/* Thumbnail: crop the wide banners to a tidy shape */
+.arivo-blog-grid .wp-block-post-featured-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Title */
+.arivo-blog-grid .wp-block-post-title {
+  font-size: 20px;
+  line-height: 1.35;
+  margin: 0;
+}
+.arivo-blog-grid .wp-block-post-title a {
+  color: #1e1b4b;
+  text-decoration: none;
+}
+.arivo-blog-grid .wp-block-post-title a:hover {
+  color: #5b57c9;
+}
+
+
+/* Desktop: 3 compact posts in one row */
+@media screen and (min-width: 768px) {
+	
+  .arivo-blog-grid .wp-block-post-template {
+    flex-direction: row;
+  }
+
+  .arivo-blog-grid .wp-block-post {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .arivo-blog-grid .wp-block-columns {
+    gap: 12px;
+  }
+
+  /* Small square thumbnail, wider title area */
+  .arivo-blog-grid .wp-block-column:first-child {
+    flex-basis: 30% !important;
+  }
+
+  .arivo-blog-grid .wp-block-column:last-child {
+    flex-basis: 70% !important;
+  }
+
+  .arivo-blog-grid .wp-block-post-featured-image img {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Smaller title, cut off after 3 lines so cards stay even */
+	div.arivomind-blog-container > div.uagb-container-inner-blocks-wrap > div.arivo-blog-grid .wp-block-post-title > a {
+		font-size: 16px;
+	}
+
+  .arivo-blog-grid .wp-block-post-title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+	  /* Smaller title, cut off after 3 lines so cards stay even */
+	div.arivomind-blog-container > div.uagb-container-inner-blocks-wrap > div.arivo-blog-grid .wp-block-post-title > a {
+		font-size: 22px;
+	}
+
+}
+
+
+/********Resources Container***********/
+
+div.entry-content.clear > div.arivomind-resources-container > div.uagb-container-inner-blocks-wrap > .wp-block-uagb-container.arivomind-resources-container-column1 {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+

@@ -66,7 +66,7 @@ function custom_gutenslider_speed_script() {
                     }
                     
                     // Update transition speed
-                    swiperInstance.params.speed = 1000; // 1 seconds transition
+                    swiperInstance.params.speed = 3000; // 3 seconds transition
                     
                     // Apply changes
                     swiperInstance.update();
