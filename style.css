@@ -6238,4 +6238,13 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
 
 }
 
+@media screen and (max-width: 769px) {
+
+	div.wp-block-uagb-container.arivomind-container2.alignfull.uagb-is-root-container div.wp-block-uagb-container div.uagb-ifb-button-wrapper.wp-block-button {
+    margin-bottom: 2em;
+}
+
+}
+
+
 
