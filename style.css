@@ -6033,7 +6033,7 @@ div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-roo
 @media screen and (min-width: 374px) and (max-width: 770px) {
 
 	div.swiper-wrapper > div.wp-block-uagb-slider-child.uagb-slider-child-wrap.arivomind-side-slide {
-    height: 240px;
+    max-height: 290px;
 }
 	
 }
@@ -6041,7 +6041,7 @@ div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-roo
 @media screen and (max-width: 373px) {
 
 		div.swiper-wrapper > div.wp-block-uagb-slider-child.uagb-slider-child-wrap.arivomind-side-slide {
-    height: 250px;
+    max-height: 280px;
 }
 
 }
@@ -6246,9 +6246,21 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
 
 }
 
+/************Icon bullet blurbs font size***********/
+
 div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container > div.wp-block-uagb-container > div.wp-block-uagb-info-box > div > div > div.uagb-ifb-title-wrap > p {
     font-size: clamp(0.75vw, 0.9em, 3vw);
 }
 
 
+
+/***********Arivo CS Card***********/
+
+@media screen and (max-width: 339px) {
+
+	div.swiper-wrapper > div.wp-block-uagb-slider-child div.wp-block-uagb-container.arivo-cs-card {
+    height: 500px;
+}
+
+}
 
