@@ -6217,12 +6217,24 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
 
 @media screen and (min-width: 1450px) {
 
-	div.arivomind-gutenslider > div > div.swiper.swiper-initialized.swiper-horizontal.swiper-watch-progress.swiper-backface-hidden {
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	div.arivomind-gutenslider > div > div.swiper {
+		height: 150px !important;
+		display: flex !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+
+}
+
+/****Exta space 6 step process*******/
+
+@media screen and (max-width: 768px) {
+
+	div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container div.wp-block-uagb-container.arivomind-6-step-column1 > div.wp-block-uagb-info-box:nth-child(n+3):nth-child(-n+5) {
+		padding-bottom: 0px !important;
+
 }
 
 }
+
 
