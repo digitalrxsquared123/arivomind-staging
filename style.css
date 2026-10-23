@@ -5913,8 +5913,20 @@ div.wp-block-uagb-slider.arivomind-side-slider.uagb-slider-container {
     height: 200px;
 }*/
 
-div.arivomind-gutenslider > div > div.swiper > div.swiper-wrapper {
+@media screen and (min-width: 771px) {
+
+	div.arivomind-gutenslider > div > div.swiper > div.swiper-wrapper {
     height: 200px !important;
+}
+
+}
+
+@media screen and (max-width: 770px) {
+
+	div.arivomind-gutenslider > div > div.swiper > div.swiper-wrapper {
+    height: 225px !important;
+}
+
 }
 
 @media screen and (max-width: 600px) {
