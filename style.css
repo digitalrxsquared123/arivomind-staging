@@ -6246,5 +6246,9 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
 
 }
 
+div.wp-block-uagb-container.arivomind-home-page-top-banner.alignfull.uagb-is-root-container > div > div.wp-block-uagb-container > div.wp-block-uagb-container > div.wp-block-uagb-info-box > div > div > div.uagb-ifb-title-wrap > p {
+    font-size: clamp(0.75vw, 0.9em, 3vw);
+}
+
 
 
