@@ -6232,6 +6232,7 @@ div.entry-content.clear > div.arivomind-resources-container > div.uagb-container
 
 	div.wp-block-uagb-container.arivomind-platform-container.alignfull.uagb-is-root-container div.wp-block-uagb-container.arivomind-6-step-column1 > div.wp-block-uagb-info-box:nth-child(n+3):nth-child(-n+5) {
 		padding-bottom: 0px !important;
+		margin-bottom: -10px !important;
 
 }
 
